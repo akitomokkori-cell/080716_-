@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>受付表示アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="panel" aria-labelledby="app-title">
+        <h1 id="app-title">受付表示アプリ</h1>
+
+        <p class="lead">お待ちしておりました。</p>
+        <p class="lead">苗字をひらがなで入力してください。</p>
+
+        <form id="lookup-form" class="lookup-form">
+          <label class="sr-only" for="last-name">苗字</label>
+          <input
+            id="last-name"
+            name="last-name"
+            type="text"
+            autocomplete="off"
+            placeholder="例: やまだ"
+          >
+          <button type="submit">送信</button>
+        </form>
+
+        <div id="result" class="result" aria-live="polite"></div>
+        <p id="closing-message" class="closing-message" hidden>素敵な会にしましょう！</p>
+      </section>
+    </main>
+  </body>
+</html>
