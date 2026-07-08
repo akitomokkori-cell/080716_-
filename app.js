@@ -1,4 +1,4 @@
-const DATA_URL = "data/guest_lookup.csv";
+const DATA_URL = "guest_lookup.csv";
 
 const form = document.querySelector("#lookup-form");
 const input = document.querySelector("#last-name");
