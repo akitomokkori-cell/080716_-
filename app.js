@@ -114,7 +114,7 @@ form.addEventListener("submit", (event) => {
   const key = normalizeKey(input.value);
 
   if (!key) {
-    showMessage("苗字を入力してください。", "warning");
+    showMessage("苗字を漢字で入力してください。", "warning");
     input.focus();
     return;
   }
